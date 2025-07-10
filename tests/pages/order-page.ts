@@ -10,7 +10,6 @@ export class OrderPage {
   readonly logoutButton: Locator
   readonly notificationPopUp: Locator
 
-
   constructor(page: Page) {
     this.page = page
     this.statusButton = page.getByTestId('openStatusPopup-button')
