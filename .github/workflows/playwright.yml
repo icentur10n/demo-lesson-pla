@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Debug Node.js
-        run: node -v
-
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
@@ -28,6 +25,7 @@ jobs:
         run: |
             echo "Running Prettier to check for formatting issues..."
             npm run check
+            npx prettier --write
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
