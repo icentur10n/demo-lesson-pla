@@ -1,5 +1,6 @@
-import { Locator, Page } from '@playwright/test'
+import {  Page } from '@playwright/test'
 import { AuthorizedPage } from './authorized-page'
+import type { Locator } from '@playwright/test'
 
 export class OrderPage extends AuthorizedPage {
   readonly name: Locator

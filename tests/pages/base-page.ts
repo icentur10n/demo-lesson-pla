@@ -1,4 +1,5 @@
-import { Locator, Page } from '@playwright/test'
+import { Page } from '@playwright/test'
+import type { Locator } from '@playwright/test'
 
 export abstract class BasePage {
   readonly page: Page

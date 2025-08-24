@@ -1,5 +1,6 @@
 import { BasePage } from './base-page'
-import { Locator, Page } from '@playwright/test'
+import { Page } from '@playwright/test'
+import type { Locator } from '@playwright/test'
 
 export class AuthorizedPage extends BasePage {
   readonly buttonStatus: Locator
