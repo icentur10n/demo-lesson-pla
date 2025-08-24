@@ -4,7 +4,7 @@ import { faker } from '@faker-js/faker/locale/ar'
 import { PASSWORD, USERNAME } from '../../config/env-data'
 import { OrderNotFound } from '../pages/order-not-found'
 import { OrderFound } from '../pages/order-found'
-
+import type { Locator } from '@playwright/test'
 let authPage: LoginPage
 
 test.beforeEach(async ({ page }) => {
